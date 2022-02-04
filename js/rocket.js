@@ -25,13 +25,13 @@ document.getElementById('countdown').
 
 			console.log('randomNumber:',randomNumber)
 
-			if (randomNumber > 5) {
+			if (randomNumber > 9) {
 				ChangeState(4); // and this is a succesfull launch
 			} else {
 				ChangeState(5); // so this is a failed launch
 			};
 
 		}, 2000);
-	};	
+	}; 	
 
 	};

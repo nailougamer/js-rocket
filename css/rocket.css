@@ -9,7 +9,7 @@
 }
 
 .right{
-	background-color: darkblue;
+	background: url('../img/gggg.jpg') ;
 	position: fixed;
 		width : 50%;
 	height: 100%;
@@ -31,16 +31,37 @@ height: 20px;
 position: absolute;
 left: 50%;
 bottom: 20px;
-width: 35px;
-height: 160px;
-background-color: red;
+width: 125px;
+height: 235px;
+margin-left: -62.5px;
+background: url('../img/good_rocket.png'); 
 transition: bottom 7000ms;
 }
+body.body-state2 .rocket{
+background-image:url('../img/good_rocket_pt2.gif') ; 
+}
+
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+background-image:url('../img/good_rocket_pt3.png')  ;
+}
+
+body.body-state5 .rocket{
+	
+background-image:url('../img/good_boom.png')  ;
+width: 250px;
+height: 250px;
+margin-left: -125px;
+}
+
+
+
 body.body-state1 .rocket{
 	transition: none;
 }
 
-	
+
 
 
 body.body-state3 .rocket,
