@@ -8,13 +8,29 @@ var ChangeState = function (state) {
 	countdownNumber = 10;
 document.getElementById('countdown').
 		innerHTML = countdownNumber;
-
+//countdown
 	if (state == 2)  {
 		timer = setInterval(function () {
 			countdownNumber = countdownNumber -1;
 			document.getElementById('countdown').
 		innerHTML = countdownNumber;
 		
+		if(countdownNumber > 4 && countdownNumber < 8) {
+				//show the scared text
+				document.getElementById('scared').className = 'scared show';
+		 } else {
+
+		 	document.getElementById('scared').className = 'scared';
+		 }
+
+		if(countdownNumber < 4 && countdownNumber > 1) {
+				//show the why tho text
+				document.getElementById('why-tho').className = 'why-tho show';
+		} else {
+
+			document.getElementById('why-tho').className = 'why-tho';
+		}
+
 		if (countdownNumber <= 0) {
 			ChangeState(3);
 		};
@@ -31,7 +47,7 @@ document.getElementById('countdown').
 				ChangeState(5); // so this is a failed launch
 			};
 
-		}, 2000);
+		}, 3000);
 	}; 	
 
 	};
