@@ -1,0 +1,19 @@
+body{
+	background-color: white;
+
+}
+
+
+.cool{
+visibility: hidden;
+width: 100px;
+height: 100px;
+background-color: lime;
+transition: background-color 0.5s ; 
+}
+
+.cool.red{
+visibility: visible;
+background-color: red;
+
+}
